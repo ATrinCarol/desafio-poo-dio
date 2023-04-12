@@ -29,7 +29,6 @@ public class Main {
 		conteudoJava.setTitulo("Curso de Java com paradigma de POO");
 		conteudoJava.setDescricao("Conteúdo de herança e polimorfismo. Conteudo é uma classe abstract portanto não é possível intancia-la." +
 		" Mas podemos instanciar um objeto do ''tipo Conteudo'' através da classe Curso que é filha da classe mãe Conteudo");
-		//double tentativa1 = conteudoJava.calcularXp();
 
 		System.out.println(curso1);
 		System.out.println(curso2);
