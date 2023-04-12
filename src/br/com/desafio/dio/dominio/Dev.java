@@ -20,7 +20,7 @@ public class Dev {
 		Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
 		if (conteudo.isPresent()) {
 			this.conteudosConcluidos.add(conteudo.get());
-			this.conteudosConcluidos.remove(conteudo.get());
+			this.conteudosInscritos.remove(conteudo.get());
 		} else {
 			System.err.println("Você não possui matrícula em nenhum conteúdo");
 		}
@@ -76,13 +76,5 @@ public class Dev {
 		return Objects.equals(conteudosConcluidos, dev.conteudosConcluidos)
 				&& Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(nome, dev.nome);
 	}
-
-	
-	
-	
-	
-	
-	
-	
 
 }
