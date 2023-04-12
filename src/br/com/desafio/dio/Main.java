@@ -2,6 +2,7 @@ package br.com.desafio.dio;
 
 import java.time.LocalDate;
 
+import br.com.desafio.dio.dominio.Conteudo;
 import br.com.desafio.dio.dominio.Curso;
 import br.com.desafio.dio.dominio.Mentoria;
 
@@ -24,9 +25,16 @@ public class Main {
 		mentoria1.setDescricao("Abrange as melhores práticas");
 		mentoria1.setData(LocalDate.now());
 		
+		Conteudo conteudoJava = new Curso(); //polimorfismo
+		conteudoJava.setTitulo("Curso de Java com paradigma de POO");
+		conteudoJava.setDescricao("Conteúdo de herança e polimorfismo. Conteudo é uma classe abstract portanto não é possível intancia-la." +
+		" Mas podemos instanciar um objeto do ''tipo Conteudo'' através da classe Curso que é filha da classe mãe Conteudo");
+		//double tentativa1 = conteudoJava.calcularXp();
+
 		System.out.println(curso1);
 		System.out.println(curso2);
 		System.out.println(mentoria1);
+		System.out.println(conteudoJava);
 		
 	}
 
